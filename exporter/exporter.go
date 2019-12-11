@@ -59,7 +59,7 @@ var (
 	latencyLabels     = []string{"latency"}
 	servLatencyLabels = []string{"server", "latency"}
 	// TODO: Instead of using hardcoded bounds, use bounds parsed from redis cli corresponding
-	// to each latency monitor. These bounds are defined in latency.conf which is feeded to
+	// to each latency monitor. These bounds are defined in latency.conf which is fed to
 	// predixy during boot up.
 	latencyBuckets = []float64{100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000,
 		4000, 5000, 6000}
