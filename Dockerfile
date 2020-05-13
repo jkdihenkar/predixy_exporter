@@ -26,3 +26,5 @@ FROM ubuntu:bionic-20200112
 COPY --from=builder /go/src/predixy_exporter/predixy_exporter /usr/local/bin/predixy_exporter
 
 ENTRYPOINT ["/usr/local/bin/predixy_exporter"]
+
+# ecr path xxxx.amazonaws.com/zomato/proxysql_exporter:v1
