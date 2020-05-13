@@ -27,4 +27,4 @@ COPY --from=builder /go/src/predixy_exporter/predixy_exporter /usr/local/bin/pre
 
 ENTRYPOINT ["/usr/local/bin/predixy_exporter"]
 
-# ecr path xxxx.amazonaws.com/zomato/proxysql_exporter:v1
+# ecr path xxxx.amazonaws.com/zomato/predixy_exporter:v1
