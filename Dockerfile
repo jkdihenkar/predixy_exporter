@@ -2,7 +2,7 @@
 ##  Stage 1
 ########################################
 
-FROM golang:1.13.1-alpine3.10 as builder
+FROM golang:1.19-alpine3.18 as builder
 
 RUN apk update && apk upgrade && \
     apk add --no-cache git make
@@ -21,7 +21,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 make
 ##  Stage 2
 ########################################
 
-FROM ubuntu:bionic-20200112
+FROM ubuntu:bionic-20230412
 
 COPY --from=builder /go/src/predixy_exporter/predixy_exporter /usr/local/bin/predixy_exporter
 
